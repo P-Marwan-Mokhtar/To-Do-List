@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@layer {
+  .container {
+    @apply mx-auto px-[15px];
+  }
+  .btn {
+    @apply text-[18px]  px-[20px] font-semibold bg-gray-500 text-white rounded-[8px] cursor-pointer hover:scale-110 transition-all duration-200;
+  }
+}
+@theme {
+  --animate-borderChange: borderChange ease 2s infinite;
+}
+@keyframes borderChange {
+  0% {
+    border: 2px solid rgb(0, 248, 248);
+  }
+  50% {
+    border: 2px solid rgb(7, 158, 233);
+  }
+  100% {
+    border: 2px solid rgb(0, 248, 248);
+  }
+}
